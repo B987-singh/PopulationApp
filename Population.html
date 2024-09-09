@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Population</title>
+    <style>
+        body{
+            background-color:rgba(255, 228, 196, 0.884);
+            display: flex;
+            justify-content: center;
+            height: 20vh;
+            margin: 200px;
+            background-image: url(popul1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+       }
+       .container{
+        background-color:rgba(245, 208, 164, 0.736);
+        text-align: center;
+        height: 50vh;
+        width: 500px;
+        border-radius: 20px;
+        box-shadow:  0px 0px 20px  ;
+
+       }
+       .input-container{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+       }
+       input[typer="text"]{
+            width: 65%;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid rgba(222, 184, 135, 0.656);
+        }
+        button{
+            padding: 10px;
+            background-color: brown;
+            color: aliceblue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(153, 91, 10);
+        }
+        .details{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Population app</h1>
+            <div class="input-container">
+                <input type="text" placeholder="Enter the city name" id="input">
+                <button onclick="getPopulation()">Get Population</button>
+
+
+            </div>
+            <div id="PopulationDetails" class="details"></div>
+        </div>
+        <script src="population.js"></script>
+</body>
+</html>
